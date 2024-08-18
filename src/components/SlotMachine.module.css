@@ -1,0 +1,29 @@
+.slotMachine {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    perspective: 1000px;
+  }
+  
+  .reel {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: rotateY(20deg);
+    transition: transform 0.5s;
+  }
+  
+  .reel:hover {
+    transform: rotateY(0deg);
+  }
+  
+  .blur {
+    filter: blur(2px);
+  }
