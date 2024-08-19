@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:1337'  // Replace with your backend URL
+const API_URL = process.env.API_URL; // Replace with your backend URL
 
 export async function createUser(name: string) {
   const response = await fetch(`${API_URL}/user`, {
